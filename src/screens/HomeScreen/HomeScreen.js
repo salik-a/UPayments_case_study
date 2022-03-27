@@ -6,10 +6,14 @@ import HomeScreenLayout from './HomeScreenLayout/HomeScreenLayout'
 import ProductsServices from '../../services/productsServices'
 import CategoriesServices from '../../services/categoriesServices'
 
+import { useSelector, useDispatch } from 'react-redux'
+
 export default function HomeScreen({ navigation }) {
 
     const productsServices = new ProductsServices()
     const categoriesServices = new CategoriesServices()
+    const newProduct = useSelector(state => state.general.newProduct)
+    const deletedProduct = useSelector(state => state.general.deletedProduct)
 
     const [productsData, setProductsData] = useState([])
     const [productsDataLoading, setproductsDataLoading] = useState(true)
@@ -68,6 +72,17 @@ export default function HomeScreen({ navigation }) {
             setFilteredProductsData(productsData)
         }
     }, [selectedCategorylist])
+
+    useEffect(() => {
+        if (newProduct) {
+            setFilteredProductsData(productsData => [...productsData, newProduct])
+        }
+    }, [newProduct])
+    useEffect(() => {
+        if (deletedProduct) {
+            setFilteredProductsData(productsData => productsData.filter(item => item.id !== deletedProduct))
+        }
+    }, [deletedProduct])
 
 
     return (

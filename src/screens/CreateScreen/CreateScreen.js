@@ -7,9 +7,13 @@ import CreateScreenLayout from './CreateScreenLayout/CreateScreenLayout'
 
 import ProductsServices from '../../services/productsServices'
 
+import { useSelector, useDispatch } from 'react-redux'
+import { setNewProduct } from '../../redux/general/generals.actions'
+
 export default function CreateScreen({ route, navigation }) {
 
     const productServices = new ProductsServices()
+    const dispatch = useDispatch()
 
     const [createData, setCreateData] = useState({
         name: '',
@@ -50,6 +54,7 @@ export default function CreateScreen({ route, navigation }) {
                 .then((res) => {
                     console.log(res.data)
                     topWarningShowMessage('Product added succesfully', 'success')
+                    dispatch(setNewProduct(createData))
                     navigation.goBack()
                 })
                 .catch((err) => {
