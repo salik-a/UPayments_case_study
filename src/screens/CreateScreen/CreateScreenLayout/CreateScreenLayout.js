@@ -32,7 +32,7 @@ export default function CreateScreenLayout({
                 <Input
                     title="Description"
                     placeholder="Description"
-                    onChangeText={(text) => setCreateData({ ...createData, price: text })}
+                    onChangeText={(text) => setCreateData({ ...createData, description: text })}
                     isEmpty={emptyAreas.price}
                 />
                 <Input

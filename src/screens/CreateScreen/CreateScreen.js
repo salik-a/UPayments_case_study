@@ -7,7 +7,7 @@ import CreateScreenLayout from './CreateScreenLayout/CreateScreenLayout'
 
 import ProductsServices from '../../services/productsServices'
 
-export default function CreateScreen({ route }) {
+export default function CreateScreen({ route, navigation }) {
 
     const productServices = new ProductsServices()
 
@@ -38,7 +38,7 @@ export default function CreateScreen({ route }) {
             avatar: createData.avatar.length === 0,
             developerEmail: createData.developerEmail.length === 0,
         })
-
+        console.log(createData)
         if (createData.name === '' || createData.developerEmail === '' || createData.description === '' || createData.avatar === '' || createData.price === 0) {
             topWarningShowMessage('Please fill all fields', 'warning')
 
@@ -50,6 +50,7 @@ export default function CreateScreen({ route }) {
                 .then((res) => {
                     console.log(res.data)
                     topWarningShowMessage('Product added succesfully', 'success')
+                    navigation.goBack()
                 })
                 .catch((err) => {
                     topWarningShowMessage('Something went wrong', 'danger')
