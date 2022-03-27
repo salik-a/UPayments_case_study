@@ -1,0 +1,206 @@
+{
+    "config": {
+        "adapter": [Function xhrAdapter
+        ],
+        "data": undefined,
+        "headers": {
+            "Accept": "application/json, text/plain, */*"
+        },
+        "maxBodyLength": -1,
+        "maxContentLength": -1,
+        "method": "get",
+        "timeout": 0,
+        "transformRequest": [
+            [Function transformRequest
+            ]
+        ],
+        "transformResponse": [
+            [Function transformResponse
+            ]
+        ],
+        "transitional": {
+            "clarifyTimeoutError": false,
+            "forcedJSONParsing": true,
+            "silentJSONParsing": true
+        },
+        "url": "https://62286b649fd6174ca82321f1.mockapi.io/case-study/products/",
+        "validateStatus": [Function validateStatus
+        ],
+        "xsrfCookieName": "XSRF-TOKEN",
+        "xsrfHeaderName": "X-XSRF-TOKEN"
+    },
+    "data": [
+        {
+            "avatar": "https://ii1.pepperfry.com/media/catalog/product/r/o/800x880/royal-wing-chair-in-blue-colour-by-dreamzz-furniture-royal-wing-chair-in-blue-colour-by-dreamzz-furn-pitcjr.jpg",
+            "category": "furnitures",
+            "createdAt": "2022-03-25T01:40:17.744Z",
+            "description": "Best furnitures for your dream house are on sale here . Check details for more information",
+            "id": "4",
+            "name": "Bedroom Chair",
+            "price": 120
+        },
+        {
+            "avatar": "https://asset.swarovski.com/images/$size_1450/t_swa103/b_rgb:ffffff,c_scale,dpr_3.0,f_auto,w_500/5558186_png/magic-bracelet--snowflake--white--rose-gold-tone-plated-swarovski-5558186.png",
+            "category": "accessories",
+            "createdAt": "2022-03-24T20:07:46.823Z",
+            "description": "To make your love happy , to see her happy ; do not look for happiness somewhere else from Upayments Online Shop",
+            "id": "5",
+            "name": "Diamond Bracelet",
+            "price": 399
+        },
+        {
+            "avatar": "https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/mbp14-spacegray-select-202110_GEO_TR?wid=1808&hei=1680&fmt=jpeg&qlt=80&.v=1633657407000",
+            "category": "electronics",
+            "createdAt": "2022-03-25T22:48:13.775Z",
+            "description": "of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy",
+            "developerEmail": "eekremtas@gmail.com",
+            "id": "7",
+            "name": "MacBook Pro",
+            "price": 1999.9
+        },
+        {
+            "avatar": "https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/MKUQ3_VW_34FR+watch-45-alum-midnight-nc-7s_VW_34FR_WF_CO?wid=750&hei=712&trim=1%2C0&fmt=p-jpg&qlt=95&.v=1632171067000%2C1631661671000",
+            "category": "electronics",
+            "createdAt": "2022-03-26T06:58:24.934Z",
+            "description": "Lorem Ipsum",
+            "developerEmail": "eekremtas@gmail.com",
+            "id": "8",
+            "name": "Apple Watch Series 7",
+            "price": 699
+        },
+        {
+            "avatar": "https://cdn03.ciceksepeti.com/cicek/kc7981520-1/L/mrym2tu-a-iphone-xr-256gb--product-red-kc7981520-1-ccac33dbdb8f482f83db5627c4032d59.jpg",
+            "category": "electronics",
+            "createdAt": "2022-03-26T21:01:26.483Z",
+            "description": "Apple iPhone Product RED
+", "developerEmail": "taratam@gmail.com", "id": "9", "name": "Apple iPhone Product RED", "price": 500}, {"avatar": "", "category": "electronics", "createdAt": "2022-03-26T23: 47: 55.240Z", "description": "", "developerEmail": "test@test.com", "id": "10", "name": "", "price": ""}, {"avatar": "", "category": "electronics", "createdAt": "2022-03-26T17: 05: 10.338Z", "description": "", "developerEmail": "test@test.com", "id": "11", "name": "", "price": ""}, {"avatar": "", "category": "electronics", "createdAt": "2022-03-26T16: 26: 39.741Z", "description": "", "developerEmail": "test@test.com", "id": "12", "name": "", "price": ""}, {"avatar": "", "category": "electronics", "createdAt": "2022-03-27T06: 19: 51.594Z", "description": "", "developerEmail": "test@test.com", "id": "13", "name": "", "price": ""}, {"avatar": "Dofdsf", "category": "electronics", "createdAt": "2022-03-26T14: 54: 51.278Z", "description": "Dadsfdsff", "developerEmail": "test@test.com", "id": "14", "name": "Aside", "price": "Fdsfsff"}], "headers": {"access-control-allow-headers": "X-Requested-With,Content-Type,Cache-Control,access_token", "access-control-allow-methods": "GET,PUT,POST,DELETE,OPTIONS", "access-control-allow-origin": "*", "connection": "keep-alive", "content-encoding": "deflate", "content-type": "application/json", "date": "Sun,
+            27 Mar 2022 09: 08: 23 GMT", "etag": "\"-229166088\"",
+            "server": "Cowboy",
+            "transfer-encoding": "Identity",
+            "vary": "Accept-Encoding",
+            "via": "1.1 vegur",
+            "x-powered-by": "Express"
+        },
+        "request": {
+            "DONE": 4,
+            "HEADERS_RECEIVED": 2,
+            "LOADING": 3,
+            "OPENED": 1,
+            "UNSENT": 0,
+            "_aborted": false,
+            "_cachedResponse": undefined,
+            "_hasError": false,
+            "_headers": {
+                "accept": "application/json, text/plain, */*"
+            },
+            "_incrementalEvents": false,
+            "_lowerCaseResponseHeaders": {
+                "access-control-allow-headers": "X-Requested-With,Content-Type,Cache-Control,access_token",
+                "access-control-allow-methods": "GET,PUT,POST,DELETE,OPTIONS",
+                "access-control-allow-origin": "*",
+                "connection": "keep-alive",
+                "content-encoding": "deflate",
+                "content-type": "application/json",
+                "date": "Sun, 27 Mar 2022 09:08:23 GMT",
+                "etag": "\"-229166088\"",
+                "server": "Cowboy",
+                "transfer-encoding": "Identity",
+                "vary": "Accept-Encoding",
+                "via": "1.1 vegur",
+                "x-powered-by": "Express"
+            },
+            "_method": "GET",
+            "_perfKey": "network_XMLHttpRequest_https://62286b649fd6174ca82321f1.mockapi.io/case-study/products/",
+            "_performanceLogger": {
+                "_closed": false,
+                "_extras": [Object
+                ],
+                "_pointExtras": [Object
+                ],
+                "_points": [Object
+                ],
+                "_timespans": [Object
+                ]
+            },
+            "_requestId": null,
+            "_response": "[{\"createdAt\":\"2022-03-25T01:40:17.744Z\",\"name\":\"Bedroom Chair\",\"avatar\":\"https://ii1.pepperfry.com/media/catalog/product/r/o/800x880/royal-wing-chair-in-blue-colour-by-dreamzz-furniture-royal-wing-chair-in-blue-colour-by-dreamzz-furn-pitcjr.jpg\",\"id\":\"4\",\"price\":120,\"description\":\"Best furnitures for your dream house are on sale here . Check details for more information\",\"category\":\"furnitures\"},{\"createdAt\":\"2022-03-24T20:07:46.823Z\",\"name\":\"Diamond Bracelet\",\"avatar\":\"https://asset.swarovski.com/images/$size_1450/t_swa103/b_rgb:ffffff,c_scale,dpr_3.0,f_auto,w_500/5558186_png/magic-bracelet--snowflake--white--rose-gold-tone-plated-swarovski-5558186.png\",\"id\":\"5\",\"price\":399,\"description\":\"To make your love happy , to see her happy ; do not look for happiness somewhere else from Upayments Online Shop\",\"category\":\"accessories\"},{\"createdAt\":\"2022-03-25T22:48:13.775Z\",\"name\":\"MacBook Pro\",\"avatar\":\"https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/mbp14-spacegray-select-202110_GEO_TR?wid=1808&hei=1680&fmt=jpeg&qlt=80&.v=1633657407000\",\"id\":\"7\",\"developerEmail\":\"eekremtas@gmail.com\",\"price\":1999.9,\"description\":\"of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy\",\"category\":\"electronics\"},{\"createdAt\":\"2022-03-26T06:58:24.934Z\",\"name\":\"Apple Watch Series 7\",\"avatar\":\"https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/MKUQ3_VW_34FR+watch-45-alum-midnight-nc-7s_VW_34FR_WF_CO?wid=750&hei=712&trim=1%2C0&fmt=p-jpg&qlt=95&.v=1632171067000%2C1631661671000\",\"id\":\"8\",\"developerEmail\":\"eekremtas@gmail.com\",\"price\":699,\"description\":\"Lorem Ipsum\",\"category\":\"electronics\"},{\"createdAt\":\"2022-03-26T21:01:26.483Z\",\"name\":\"Apple iPhone Product RED\",\"avatar\":\"https://cdn03.ciceksepeti.com/cicek/kc7981520-1/L/mrym2tu-a-iphone-xr-256gb--product-red-kc7981520-1-ccac33dbdb8f482f83db5627c4032d59.jpg\",\"id\":\"9\",\"price\":500,\"category\":\"electronics\",\"description\":\"Apple iPhone Product RED\\n\",\"developerEmail\":\"taratam@gmail.com\"},{\"createdAt\":\"2022-03-26T23:47:55.240Z\",\"name\":\"\",\"avatar\":\"\",\"id\":\"10\",\"price\":\"\",\"description\":\"\",\"developerEmail\":\"test@test.com\",\"category\":\"electronics\"},{\"createdAt\":\"2022-03-26T17:05:10.338Z\",\"name\":\"\",\"avatar\":\"\",\"id\":\"11\",\"price\":\"\",\"description\":\"\",\"developerEmail\":\"test@test.com\",\"category\":\"electronics\"},{\"createdAt\":\"2022-03-26T16:26:39.741Z\",\"name\":\"\",\"avatar\":\"\",\"id\":\"12\",\"price\":\"\",\"description\":\"\",\"developerEmail\":\"test@test.com\",\"category\":\"electronics\"},{\"createdAt\":\"2022-03-27T06:19:51.594Z\",\"name\":\"\",\"avatar\":\"\",\"id\":\"13\",\"price\":\"\",\"description\":\"\",\"developerEmail\":\"test@test.com\",\"category\":\"electronics\"},{\"createdAt\":\"2022-03-26T14:54:51.278Z\",\"name\":\"Aside\",\"avatar\":\"Dofdsf\",\"id\":\"14\",\"price\":\"Fdsfsff\",\"description\":\"Dadsfdsff\",\"developerEmail\":\"test@test.com\",\"category\":\"electronics\"}]",
+            "_responseType": "",
+            "_sent": true,
+            "_subscriptions": [],
+            "_timedOut": false,
+            "_trackingName": "unknown",
+            "_url": "https://62286b649fd6174ca82321f1.mockapi.io/case-study/products/",
+            "readyState": 4,
+            "responseHeaders": {
+                "Access-Control-Allow-Headers": "X-Requested-With,Content-Type,Cache-Control,access_token",
+                "Access-Control-Allow-Methods": "GET,PUT,POST,DELETE,OPTIONS",
+                "Access-Control-Allow-Origin": "*",
+                "Connection": "keep-alive",
+                "Content-Encoding": "deflate",
+                "Content-Type": "application/json",
+                "Date": "Sun, 27 Mar 2022 09:08:23 GMT",
+                "Etag": "\"-229166088\"",
+                "Server": "Cowboy",
+                "Transfer-Encoding": "Identity",
+                "Vary": "Accept-Encoding",
+                "Via": "1.1 vegur",
+                "X-Powered-By": "Express"
+            },
+            "responseURL": "https://62286b649fd6174ca82321f1.mockapi.io/case-study/products/",
+            "status": 200,
+            "timeout": 0,
+            "upload": {},
+            "withCredentials": true
+        },
+        "status": 200,
+        "statusText": undefined
+    }
+
+
+
+    [
+        {
+            "avatar": "https://ii1.pepperfry.com/media/catalog/product/r/o/800x880/royal-wing-chair-in-blue-colour-by-dreamzz-furniture-royal-wing-chair-in-blue-colour-by-dreamzz-furn-pitcjr.jpg",
+            "category": "furnitures",
+            "createdAt": "2022-03-25T01:40:17.744Z",
+            "description": "Best furnitures for your dream house are on sale here . Check details for more information",
+            "id": "4",
+            "name": "Bedroom Chair",
+            "price": 120
+        },
+        {
+            "avatar": "https://asset.swarovski.com/images/$size_1450/t_swa103/b_rgb:ffffff,c_scale,dpr_3.0,f_auto,w_500/5558186_png/magic-bracelet--snowflake--white--rose-gold-tone-plated-swarovski-5558186.png",
+            "category": "accessories",
+            "createdAt": "2022-03-24T20:07:46.823Z",
+            "description": "To make your love happy , to see her happy ; do not look for happiness somewhere else from Upayments Online Shop",
+            "id": "5",
+            "name": "Diamond Bracelet",
+            "price": 399
+        },
+        {
+            "avatar": "https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/mbp14-spacegray-select-202110_GEO_TR?wid=1808&hei=1680&fmt=jpeg&qlt=80&.v=1633657407000",
+            "category": "electronics",
+            "createdAt": "2022-03-25T22:48:13.775Z",
+            "description": "of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy",
+            "developerEmail": "eekremtas@gmail.com",
+            "id": "7",
+            "name": "MacBook Pro",
+            "price": 1999.9
+        },
+        {
+            "avatar": "https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/MKUQ3_VW_34FR+watch-45-alum-midnight-nc-7s_VW_34FR_WF_CO?wid=750&hei=712&trim=1%2C0&fmt=p-jpg&qlt=95&.v=1632171067000%2C1631661671000",
+            "category": "electronics",
+            "createdAt": "2022-03-26T06:58:24.934Z",
+            "description": "Lorem Ipsum",
+            "developerEmail": "eekremtas@gmail.com",
+            "id": "8",
+            "name": "Apple Watch Series 7",
+            "price": 699
+        },
+        {
+            "avatar": "https://cdn03.ciceksepeti.com/cicek/kc7981520-1/L/mrym2tu-a-iphone-xr-256gb--product-red-kc7981520-1-ccac33dbdb8f482f83db5627c4032d59.jpg",
+            "category": "electronics",
+            "createdAt": "2022-03-26T21:01:26.483Z",
+            "description": "Apple iPhone Product RED
+", "developerEmail": "taratam@gmail.com", "id": "9", "name": "Apple iPhone Product RED", "price": 500}, {"avatar": "", "category": "electronics", "createdAt": "2022-03-26T23: 47: 55.240Z", "description": "", "developerEmail": "test@test.com", "id": "10", "name": "", "price": ""}, {"avatar": "", "category": "electronics", "createdAt": "2022-03-26T17: 05: 10.338Z", "description": "", "developerEmail": "test@test.com", "id": "11", "name": "", "price": ""}, {"avatar": "", "category": "electronics", "createdAt": "2022-03-26T16: 26: 39.741Z", "description": "", "developerEmail": "test@test.com", "id": "12", "name": "", "price": ""}, {"avatar": "", "category": "electronics", "createdAt": "2022-03-27T06: 19: 51.594Z", "description": "", "developerEmail": "test@test.com", "id": "13", "name": "", "price": ""}, {"avatar": "Dofdsf", "category": "electronics", "createdAt": "2022-03-26T14: 54: 51.278Z", "description": "Dadsfdsff", "developerEmail": "test@test.com", "id": "14", "name": "Aside", "price": "Fdsfsff"}
+        ]
