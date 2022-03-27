@@ -1,25 +1,21 @@
 import { StyleSheet, Platform } from "react-native";
 
-const isIos = Platform.OS == "ios";
+
 export default StyleSheet.create({
     container: {
-
 
         shadowColor: "#000",
         shadowOffset: {
             width: 0,
             height: 0,
         },
-        shadowOpacity: 0.1,
+        shadowOpacity: 0.2,
         shadowRadius: 4,
-
-        elevation: isIos ? 1 : 2.5,
-
+        elevation: 2,
         backgroundColor: "white",
         borderRadius: 10,
         marginVertical: 8,
-        marginHorizontal: 4,
-
+        marginHorizontal: 6,
         flex: 1
     },
     imageContainer: {
@@ -37,6 +33,16 @@ export default StyleSheet.create({
         borderRadius: 10,
         width: '100%',
         minHeight: 100,
+
+        shadowColor: "#000",
+        shadowOffset: {
+            width: 0,
+            height: -20,
+        },
+        shadowOpacity: 0.4,
+        shadowRadius: 10,
+
+        elevation: 50,
     },
     productName: {
         fontSize: 16,
