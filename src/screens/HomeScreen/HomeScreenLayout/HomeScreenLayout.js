@@ -1,25 +1,28 @@
-import { View, Text, SafeAreaView, Button, ActivityIndicator, FlatList } from 'react-native'
+import { View, Text, SafeAreaView, TouchableOpacity, ActivityIndicator, FlatList, ScrollView } from 'react-native'
 import React from 'react'
 
 import styles from './HomeScreenLayout.style'
 
 import ProductCard from '../Components/ProductCard/ProductCard';
+import CreateButton from '../Components/CreateButton/CreateButton';
 
 export default function HomeScreenLayout({
     navigation,
     productsData,
-    productsDataLoading
+    productsDataLoading,
+    categoriesData,
+    categoriesDataLoading,
+    handleCategorySelect,
+    selectedCategorylist,
+    filteredProductsData,
 }) {
     const renderItem = ({ item, index }) => (
-
-
         <ProductCard
             itemData={item}
             onPress={() => {
                 navigation.navigate('DetailScreen', item)
             }}
         />
-
     );
 
     const renderListEmptyComponent = () => (
@@ -35,7 +38,29 @@ export default function HomeScreenLayout({
     return (
         <SafeAreaView style={styles.container}>
 
-            <Text>HomeScreenLayout</Text>
+            <Text style={styles.headerStyle}>UPaymentStore</Text>
+            {categoriesDataLoading ?
+                (<SafeAreaView style={styles.indicatorCategories}>
+                    <ActivityIndicator size="small" color="black" />
+                </SafeAreaView>)
+                :
+                (<View style={styles.categoriesCardContainer}>
+                    <ScrollView
+                        horizontal={true}
+                        showsHorizontalScrollIndicator={false}
+                    >
+                        {categoriesData.map((item, index) => (
+                            <TouchableOpacity
+                                key={index}
+                                style={[styles.categoriesCard, selectedCategorylist.includes(item.name) ? styles.categoriesCardSelected : null]}
+                                onPress={() => { handleCategorySelect(item.name) }}
+                            >
+                                <Text style={[styles.categoriesCardText, selectedCategorylist.includes(item.name) ? styles.categoriesCardSelectedText : null]}>{item.name} </Text>
+                            </TouchableOpacity>
+                        ))}
+                    </ScrollView>
+                </View>)
+            }
 
             {productsDataLoading ?
                 (<SafeAreaView style={styles.indicator}>
@@ -44,16 +69,20 @@ export default function HomeScreenLayout({
                 :
                 <FlatList
                     style={styles.listStyle}
-                    data={productsData}
+                    data={filteredProductsData}
                     renderItem={renderItem}
-                    keyExtractor={(item, index) => item.id}
+                    keyExtractor={(item, index) => index * 100}
                     //refreshing={refreshing}
                     //onRefresh={onRefresh}
-                    onEndReachedThreshold={0}
                     ListEmptyComponent={renderListEmptyComponent}
                     numColumns={'2'}
+                    showsVerticalScrollIndicator={false}
                 />
             }
+
+            <CreateButton onPress={() => {
+                navigation.navigate('CreateScreen')
+            }} />
         </SafeAreaView>
     )
 }
