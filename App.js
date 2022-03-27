@@ -1,15 +1,19 @@
 import React from 'react';
 import {
-  SafeAreaView,
+  View,
 } from 'react-native';
 import Navigation from './src/navigation/navigation';
+import FlashMessage from "react-native-flash-message";
 
 
 
 const App = () => {
 
   return (
-    <Navigation />
+    <>
+      <Navigation />
+      <FlashMessage position="top" />
+    </>
   );
 };
 
