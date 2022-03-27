@@ -34,7 +34,7 @@ export default function HomeScreen({ navigation }) {
         categoriesServices.getAllCategories()
             .then(res => {
                 //console.log(res.data)
-                setFilteredProductsData(res.data)
+
                 setCategoriesData(res.data)
             })
             .catch(err => {
@@ -46,7 +46,8 @@ export default function HomeScreen({ navigation }) {
 
         productsServices.getAllProducts()
             .then(res => {
-                console.log(res.data)
+                //console.log(res.data)
+                setFilteredProductsData(res.data)
                 setProductsData(res.data)
             })
             .catch(err => {
@@ -78,6 +79,7 @@ export default function HomeScreen({ navigation }) {
             setFilteredProductsData(productsData => [...productsData, newProduct])
         }
     }, [newProduct])
+
     useEffect(() => {
         if (deletedProduct) {
             setFilteredProductsData(productsData => productsData.filter(item => item.id !== deletedProduct))
