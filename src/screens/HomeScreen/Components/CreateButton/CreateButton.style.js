@@ -4,11 +4,11 @@ import { StyleSheet } from "react-native";
 export default StyleSheet.create({
     container: {
         position: "absolute",
-        bottom: 20,
-        right: 20,
+        bottom: 40,
+        right: 25,
         borderRadius: 50,
-        width: 50,
-        height: 50,
+        width: 55,
+        height: 55,
         alignItems: "center",
         justifyContent: "center",
         backgroundColor: 'white',
