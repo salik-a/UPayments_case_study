@@ -6,6 +6,8 @@ import styles from './HomeScreenLayout.style'
 import ProductCard from '../Components/ProductCard/ProductCard';
 import CreateButton from '../Components/CreateButton/CreateButton';
 
+import uuid from 'react-native-uuid';
+
 export default function HomeScreenLayout({
     navigation,
     productsData,
@@ -51,7 +53,7 @@ export default function HomeScreenLayout({
                     >
                         {categoriesData.map((item, index) => (
                             <TouchableOpacity
-                                key={index}
+                                key={uuid.v4()}
                                 style={[styles.categoriesCard, selectedCategorylist.includes(item.name) ? styles.categoriesCardSelected : null]}
                                 onPress={() => { handleCategorySelect(item.name) }}
                             >
@@ -71,7 +73,7 @@ export default function HomeScreenLayout({
                     style={styles.listStyle}
                     data={filteredProductsData}
                     renderItem={renderItem}
-                    keyExtractor={(item, index) => index * 100}
+                    keyExtractor={(item, index) => uuid.v4()}
                     //refreshing={refreshing}
                     //onRefresh={onRefresh}
                     ListEmptyComponent={renderListEmptyComponent}
@@ -81,7 +83,7 @@ export default function HomeScreenLayout({
             }
 
             <CreateButton onPress={() => {
-                navigation.navigate('CreateScreen')
+                navigation.navigate('CreateScreen', categoriesData)
             }} />
         </SafeAreaView>
     )
