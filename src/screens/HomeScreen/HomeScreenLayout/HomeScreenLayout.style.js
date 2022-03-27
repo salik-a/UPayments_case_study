@@ -4,7 +4,7 @@ export default StyleSheet.create({
     container: {
         flex: 1,
         backgroundColor: '#fff',
-        paddinghorizontal: 20,
+        paddingHorizontal: 20,
     },
     emptyListText: {
         fontSize: 18,
@@ -19,6 +19,7 @@ export default StyleSheet.create({
         marginTop: 15,
         flex: 1,
         height: Dimensions.get('window').height,
+
     },
     emptyListContainer: {
         flex: 1,

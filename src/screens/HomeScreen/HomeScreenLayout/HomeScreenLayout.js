@@ -16,9 +16,8 @@ export default function HomeScreenLayout({
         <ProductCard
             itemData={item}
             onPress={() => {
-                navigation.navigate('DetailScreen', item.id)
+                navigation.navigate('DetailScreen', item)
             }}
-
         />
 
     );

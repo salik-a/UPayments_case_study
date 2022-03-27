@@ -4,6 +4,7 @@ import { View, Text } from 'react-native'
 import HomeScreenLayout from './HomeScreenLayout/HomeScreenLayout'
 
 import ProductsServices from '../../services/productsServices'
+
 export default function HomeScreen({ navigation }) {
 
     const productsServices = new ProductsServices()

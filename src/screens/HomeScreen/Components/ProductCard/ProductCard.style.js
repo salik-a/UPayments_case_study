@@ -22,15 +22,21 @@ export default StyleSheet.create({
 
         flex: 1
     },
+    imageContainer: {
+        flex: 1
+    },
     productImage: {
         width: 150,
         height: 250,
         alignSelf: "center",
+        resizeMode: 'center',
     },
     bottomContainer: {
         backgroundColor: "black",
         padding: 10,
         borderRadius: 10,
+        width: '100%',
+        minHeight: 100,
     },
     productName: {
         fontSize: 16,
