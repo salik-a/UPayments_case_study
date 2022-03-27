@@ -5,32 +5,29 @@ import DetailScreenLayout from './DetailScreenLayout/DetailScreenLayout'
 
 import ProductsServices from '../../services/productsServices'
 
-export default function DetailScreen({ route }) {
+import { topWarningShowMessage } from '../../helpers/topWarningShowMessage'
 
-    // const productsServices = new ProductsServices()
+export default function DetailScreen({ route, navigation }) {
 
-    // const [productDetailData, setProductDetailData] = useState({})
-    // const [productDetailDataLoading, setProductDetailDataLoading] = useState(true)
+    const productsServices = new ProductsServices()
 
-
-    // useEffect(() => {
-    //     productsServices.getProductDetail(route.params)
-    //         .then(res => {
-    //             //console.log(res.data)
-    //             setProductDetailData(res.data)
-    //         })
-    //         .catch(err => {
-    //             console.log(err)
-    //         })
-    //         .finally(() => {
-    //             setProductDetailDataLoading(false)
-    //         })
-    // }, [])
-
+    const handleDeleteProduct = (id) => {
+        productsServices.deleteProduct(id)
+            .then(res => {
+                console.log(res.data)
+                topWarningShowMessage('Product deleted succesfully', 'success')
+                navigation.goBack()
+            })
+            .catch(err => {
+                console.log(err)
+                topWarningShowMessage('Product delete failed', 'danger')
+            })
+    }
 
     return (
         <DetailScreenLayout
             productDetailData={route.params}
+            handleDeleteProduct={handleDeleteProduct}
 
         />
     )

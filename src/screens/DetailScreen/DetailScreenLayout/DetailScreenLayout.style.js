@@ -15,7 +15,7 @@ export default StyleSheet.create({
 
     productImage: {
         width: 300,
-        height: 450,
+        height: 400,
         alignSelf: "center",
         resizeMode: 'center',
     },
@@ -26,6 +26,9 @@ export default StyleSheet.create({
         borderRadius: 10,
         flex: 1,
         width: '100%',
+        position: 'absolute',
+        bottom: 0,
+        paddingBottom: 40,
     },
 
     productName: {
@@ -47,6 +50,26 @@ export default StyleSheet.create({
         fontWeight: "bold",
         color: "white",
         alignSelf: "flex-end",
+    },
+    row: {
+        flexDirection: "row",
+        justifyContent: "space-between",
+        alignItems: "center",
+        marginTop: 20,
+    },
+    deleteText: {
+        color: "white",
+        fontSize: 20,
+    },
+    deleteButton: {
+        borderRadius: 25,
+        backgroundColor: "black",
+        justifyContent: "center",
+        alignItems: "center",
+        paddingVertical: 5,
+        paddingHorizontal: 10,
+        borderColor: "white",
+        borderWidth: 2,
     }
 
 
